@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <!-- <meta name="viewport" content="width=device-width,initial-scale=1.0"> -->
+  <meta name=viewport content="width=device-width,initial-scale=1">
+  <meta name=viewport content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script>
+  <!-- <script src="https://3gimg.qq.com/lightmap/components/geolocation/geolocation.min.js" ></script> -->
+  <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=ZydvYpHfVr0D6qnoUGYfe8KpXoXrQ1VN"></script>
+  <title>门票</title>
+</head>
+
+<body>
+    <!-- <script src="//cdn.bootcss.com/eruda/1.4.2/eruda.min.js"></script>
+    <script>eruda.init();</script> -->
+  <script>
+    var wdTrue = false;
+    if (location.hostname == "m.wandaly.net") { wdTrue = true; }
+    if (!!wdTrue) {
+      document.write("<scr" + "ipt id='spay-script' type='text/javascript' src='https://jspay.beecloud.cn/1/pay/jsbutton/returnscripts?appId=2a8c2fed-03f1-42d0-a0c8-f6309de61861'></scr" + "ipt>");
+    } else {
+      // document.write("<scr" + "ipt id='spay-script' type='text/javascript' src='https://jspay.beecloud.cn/1/pay/jsbutton/returnscripts?appId=33ec1a4a-f9ae-4493-a327-7076e51e7476'></scr" + "ipt>");
+      document.write("<scr" + "ipt id='spay-script' type='text/javascript' src='https://jspay.beecloud.cn/1/pay/jsbutton/returnscripts?appId=7f4ef87c-f991-4a14-a81e-72f45d4b98ec'></scr" + "ipt>");
+    }
+  </script>
+
+<div id="app"></div>
+
+<!-- built files will be auto injected -->
+</body>
+
+<script src='http://res.wx.qq.com/open/js/jweixin-1.2.0.js'></script>
+
+</html>
